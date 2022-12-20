@@ -1,7 +1,8 @@
-def greet():
-	name = input("Enter your name:");
-	print (f"hi {name}");
-#important to include in the brackets the whole print that I want to say
-#{this part is just to include any input from the user}
+# this is the start 
 
-greet()
+mylist = ['apples','mangos','strawberries']
+
+myList.append('mandarines')
+myList.remove('apples')
+
+print(myList)
