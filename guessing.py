@@ -1,11 +1,22 @@
 import random,sys,os,math   # import then name of the module
 
+
+# for i in range(1,11):
+#     print(i)
+    
+num = 0
+while (num <= 20):
+    print(num)
+    num = num +1
+
+# sys.exit()
+
+
 for i in range(5):
     print(random.randint(1,10)) #using randint function to get 5 random numbers
     # 6, 3, 5, 10, 1
     
 # sys.exit()
-
 
 
 secretNumber = random.randint(1,10) #assign a random secret variable
@@ -29,3 +40,8 @@ if guess == secretNumber:
     print('The secret number was indeed ' + str(secretNumber))
 else:
     print('Nope, the number I was thinking about was ' + str(secretNumber))
+    
+    
+    # RockPaper Scissor Game
+    
+

@@ -23,15 +23,16 @@ print("Nice to meet u " + name)
 print("you have " + str(len(name)) + " letters in your name") #if you put str(int)-> will get error for trying to convert a letter to int
 # sys.exit()
 
-age = int(input("how old are you?" ))
-
-if type(age) == float or type(age) == int:  
-    print("dope ! you'll be " + str(int(age) + 1) + " in about a year or so right?") 
-    year = 2022 - int(age)
-    print ('You were also probably born in ' + str(int(year)) + ' !') 
-
-else:
-    print("thefak is this gibberish")
+while True:
+    age = input("How old are you?") 
+    if age.isdigit():  # isdigit() method for evaluating if input is str/int
+        print("dope ! you'll be " + str(int(age) + 1) + " in about a year or so right?") 
+        year = 2022 - int(age)
+        print ('You were also probably born in ' + str(int(year)) + ' !') 
+        sys.exit()
+        
+    else:
+        print("thefak is this gibberish, try again with number")
         
   
   
